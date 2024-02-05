@@ -1,0 +1,111 @@
+<!-- Page Content -->
+<script>
+  $("head").append("<title>College of Visual Arts and Design | MyLab@UNT: Guacamole FAQ</title>");
+  $("head").append("<link rel='icon' type='image/x-icon' href='/assets/images/_archive_logos/guacamole-monochrome-round.png'>"); 
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/assets/scripts/head-elements.js"></script>
+<script>  // Uses jquery-3.3.1.js
+$(document).ready(function(){
+   $('#mac-soft-list').load("/assets/content/software-list-guacamole.html");
+   $('#win-soft-list').load("/assets/content/software-list-citrix.html");
+});
+</script>
+<div class="page-fix">
+<div class="section">
+<div class="anchor_tag" id="guacafaq"></div>
+<h2>FAQ: Frequently Asked Questions</h2>
+<p>Below you will find answers to commonly asked questions. If you have a question that is not addressed, please contact the <a href="mailto:guacamole@unt.edu?subject=WEBFORM:Guacamole" alt="Email Guacamole Support at UNT"><b>UNT Guacamole Administrators</b></a>. We appreciate any feedback we receive and will update our documentation and make changes to the service as appropriate.</p>
+<div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">What is available through this service? &nbsp;Who may use the service?</p></button>
+<div class="content">
+<p class="content-box">The <b>mylab.unt.edu</b> service can provide access to multiple computer labs available on campus. The <b>UNT MacOS Online Computer Lab</b>, hosted by this service, is the primary Online MacOS computer lab for our campus. The lab officially opens on the first day of classes. Once classes begin each semester all actively enrolled students, faculty, adjuncts, and other instructional staff are granted access to use the service. Barring any unexpected issues, the lab will remain open, outside of scheduled maintenance windows, <b>24/7</b> during the semester. This includes nights, weekends, and holidays. There are <em>specialized labs</em>, provided by the individual colleges and other units that are also hosted on this system. The access to those labs is managed by the <em>hosting</em> unit and may be available on a different schedule.</p>
+</div></div>
+
+<div>
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">Do I need a Mac to use this online lab?  &nbsp;Will I be able connect to a Mac from a computer running Windows, ChromeOS, or Linux?</p></button>
+<div class="content">
+<p class="content-box">You can connect using any device that can run running a web browser: it does not have to be a Mac. If you connect to a Mac from a non-Apple device, you will want to review the differences between the Mac and Windows keyboards. Here is a link to the Apple support <a href="https://support.apple.com/guide/mac-help/windows-keys-on-a-mac-keyboard-cpmh0152">website</a> with useful information.</p>
+</div></div>
+
+<div>
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">What software is available on the Macs that are part of the UNT Online Lab?</p></button>
+<div class="content">
+  <div class="content-box" style="padding-top:0!important; padding-bottom:0!important">
+  <div id="mac-soft-list"></div>
+  </div>
+</div>
+</div>
+
+<div>
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">I need to use Windows software: What are the remote access options for Windows?</p></button>
+<div class="content">
+  <p class="content-box">If you need to use a <em>Windows</em> computer, the campus provides a virtualized Windows desktop solution: <b>Citrix Workspace</b>. You can find out more and access it from the <a href="https://mylab.unt.edu">mylab.unt.edu</a> website as well. <b class="semi-bold">If you are a Mac user but want to run Windows software applications on a Mac without having to use a Windows computer: you can do that from the Mac computers hosted on this service</b>. All Windows applications available on the Citrix Workspace service can be accessed from the Macs by using the <b>Citrix Workspace for Mac</b> application, which is installed on all of the computers.</p>
+<!-- <div id="win-soft-list"></div> -->
+</div>
+</div>
+
+<div>
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">Does access to this service require Multi-Factor Authentication (MFA)?</p></button>
+<div class="content">
+<p class="content-box">Yes. This page covers how to login using MFA (see above; top of the document). UNT uses the <a href="https://duo.com" alt="Link to the Cisco DUO Website">Cisco DUO</a> app for MFA. To get started and enroll or configure a device for MFA please visit the MFA page on the <a href="https://itss.untsystem.edu/divisions/mrs/is/multi-factor-authentication.php" alt="MFA Documentation and Help">UNT System website</a>.</p>
+</div></div>
+
+<div>
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">Do I need to connect to the Campus VPN to connect to a Mac?</p></button>
+<div class="content">
+<p class="content-box">No. In fact, we suggest you do not connect to the campus VPN as it will hinder performance considerably when it is experiencing high utilization. If you need to connect to the campus VPN to access another UNT resource, you may want to disconnect before using this service if the performance is impacted. If you are using this or any other campus service while physically on campus, you generally do not need to connect to campus VPN. The campus VPN service is only required to access <em>some</em> systems while off-campus.</p>
+
+</div></div>
+
+<div>
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">Besides the <b>UNT MacOS Online Computer Lab</b>, what other online computer labs are hosted on this system?</p></button>
+<div class="content">
+<p class="content-box">All students and instructors have access to the <b>UNT MacOS Online Computer Lab</b>: most users will only see the UNT MacOS Online Computer Lab as an available option in Guacamole. Some colleges and other units have specialized MacOS computer labs and classroom labs available, but these have restrictions on who is able to access them: some are restricted to certain majors and others are restricted to students enrolled in certain courses. If your college has a specialized computer lab available or if you require
+access to a specialized class lab as part of a course you are taking, you need to follow up with your college. Start by asking your instructor(s). You can go <a href="https://academictechnologies.unt.edu/contact">here</a> to find the contact information for the local support group for your college.</p>
+
+</div></div>
+
+<div>
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">What are the technical specifications of the MacOS computers in the <b>UNT MacOS Online Computer Lab</b>?</p></button>
+<div class="content">
+<p class="content-box">The specialized college and departmental labs have varying specifications, depending on the use cases they are addressing. The technical specifications of the computers in the <b>UNT MacOS Online Computer Lab</b>, available to all students, are given below:<br><br>
+Apple Mac Mini<br>
+Processor: M1; 8-Core CPU<br>
+Memory: 16GB Unified RAM<br>
+Storage: 512GB SSD<br>
+Graphics: 8-Core GPU | 16-Core Neural Engine<br><br>
+The Apple Mac mini now features Apple's first chip designed specifically for Mac. The Apple M1 integrates the CPU, GPU, Neural Engine, I/O, and more into a single system on a chip (SoC). All of this boosts the Mac mini to an entirely different level, as it features up to 3.5 times faster CPU performance, up to 6 times faster GPU performance, and up to 15 times faster machine learning. With its profound increase in performance and efficiency, M1 delivers the biggest leap ever for the Mac.</p>
+
+</div></div>
+
+<div>
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">How do I install the Citrix Workspace app on my computer?</p></button>
+<div class="content">
+<p class="content-box">If you are using a university-managed computer, the Citrix Workspace application is available through Self Service (JAMF) on you Mac. If you do not see it as an available package, contact your local IT service desk - if you are unsure who to contact you can look up your units support group <a href="https://academictechnologies.unt.edu/contact">here</a>. If you are installing Citrix Workspace on a personal device, you can download the latest application from the Citrix <a href="https://www.citrix.com/en-au/products/receiver.html" alt="Download Citrix Workspace for the Mac">website</a>. However, you do not <em>need</em> to have the
+client installed on your computer. As with Guacamole, you can access Citrix Workspace from any device that can run a web browser. You will need to provide the <b>Citrix Store</b> when installing the app. When prompted for a server or store URL: myuntlab.cloud.com If you would like to login using a web browser to the Citrix Workspace at <b>mylab.unt.edu</b> you do so directly by going here <a href="https://myuntlab.cloud.com/" alt="Citrix Workspace@my.unt.edu">https://myuntlab.cloud.com</a></p>
+
+</div></div>	
+</div>
+</div>
+</section>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+</div>
+<div class="end"></div>

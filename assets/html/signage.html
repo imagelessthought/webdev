@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+
+<title>Styling Template</title>
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.svg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+<link rel="stylesheet" href="/assets/css/styles-signage.css">
+<link rel="stylesheet" href="/assets/css/prism.css">
+<style>
+/* ADA */
+.screenreader-text {position:absolute; left:-999px; width:1px; height:1px; top:auto;}
+.screenreader-text:focus {color:black; display:inline-block; height:auto; width:auto; position:static; margin:auto;}
+
+/* Media Queries
+@media screen and (max-width: 450px) {}
+@media screen and (min-width: 451px) and (max-width: 600px) {content: 100%;}
+@media screen and (min-width :601px) and (max-width: 900px) {content: 100%;}
+@media screen and (min-width :901px) and (max-width: 1200px) {content: 100%;}
+*/
+</style>
+</head>
+<!-- BEGIN PAGE -->
+<body>
+<a id='skip-nav' class='screenreader-text' href='#main-content'>Skip Navigation or Skip to Content</a>
+<script src="/assets/scripts/prism.js"></script>
+
+<!-- Header -->
+<div class="header" id="myHeader"></div>
+<!-- END: Header -->
+
+<!-- Page Content -->
+
+<div class="page-container">
+<div class="content" id="myContent">
+<main id="main-content">
+<div class="encapsulate">
+<h1 style="padding:0; margin:0">Universal Digital Signage</h1>
+<p style="padding:0; margin:0">Centrally managed digital sign and screensaver content delivery</p>
+</div>
+<h2>Description:</h2>
+<p> The solution created will allow digital signs, kiosks, and screensavers to be pointed to a webserver where the content is stored. Content is provided through html playlists: each playlist may have a unique design. Each device that is registered should be able to retrieve a customized playlist (checks by hostname) or use a playlist created for a channel or particular group. Signage admins should be able to create, edit, and delete playlists (unique and channels), add\remove images, and assign playlists to devices through an admin portal.</p>
+<main>
+<section id="components">    
+<h2>Components</h2>
+<p>Webserver (Hosts Content):</p>
+<ul>
+<li>Upload images to Image Library</li>
+<p>The user should be able to upload new images to the image library through the admin portal. Users should be able to create separate libaries. Libraries will be stored in \content\images\<b class="highlight">library-name</b>.  The user should be able to move and copy images between libraries, and delete images from the libraries using the admin portal.</p>
+</ul>
+<ul>
+<li>Playlist Creation and Management</li>
+<p>The user should be able to select a template, add images from the libraries to the playlists and adjust the settings (ex. slide duration). </p>
+</ul>
+<ul>
+<li>Assign Playlists to a Device</li>
+<p>Devices will launch a browser in full-screen kiosk mode at startup and open the index.html file on the webserver that is stored in the folder under /devices that matches their hostname. For example: If the hostname of a device is "pisign1" and the server name is "signage.edu", the device should open https://signage.edu/devices/pisign1/index.html at launch.</p>
+<p>This index file is a simple redirect:</p>
+<pre><code class="language-css">
+&lt;meta http-equiv=&quot;refresh&quot; content=&quot;0; URL=https://signage.cvad.unt.edu/playlist/<b class="highlight">playlist-name</b>/hostname/index.html&quot;/&gt;
+</code></pre>
+The playlist is assigned to the device through the admin portal by replacing the string ''<b class="highlight">playlist-name</b>'' in the index.html file.
+</ul>
+<p>Screensavers:</p>
+<uL>
+<li>Simple screensavers for Mac and Windows will be created that points to a default playlist on the server. The default playlist should be configurable, with the ability to set the default playlist before it is distributed, but not edittable by the end user. The intent is that the user does not have to configure anything - just install and let the OS settings on time to wait before a screensaver begins handle the rest.</li>    
+</uL>    
+<p>Digital Signage Player:</p>
+<ul>
+<li>RaspberryPi: <a href="https://www.otot.tv/fullpageos-setup-instructions/" alt="Rspberry Pi FullPageOS">FullPageOS</a>: Simple Raspberry Pi OS build that launches a web browser in kios mode and opens a specified URL at startup. Since this exists already, we will just need to include instructions for setting the devices up.</li>
+</ul>
+</section>
+<section id="content">
+<h2>Content</h2>
+<p>The content will be provided through webpages hosted on the webserver.  The templates should display the content such that it fits the screen without scrolling.  The presentation of the content will be controlled entirelly by the html - the devices will just point at the pages.</p>
+<ul>
+<li>Images: The images should be created with 16:10 aspect ratio.</li>
+<li>Templates: The links to the starter versions of three templates we will use at the start of the project can be found be found at the bottom of this <a href="https://itservices.cvad.unt.edu/service-digital-displays.html" alt="Example Templates">page</a>.  Some tweaking will need to occur: for exaple the images that do not have a 16:10 aspect ration will need to be adjusted to fit the screen, which may require a background be added (black).</li>
+</ul>
+</section>
+<hr>
+<section id="content">
+<h2>Admin Console Features</h2>
+<h3>Options: <b class="greenfont">Device, Groups, Images, Playlists, Scheduler</b></h3>
+<ul>
+<li style="list-style: none"><b class="greenfont">Device</b></li>
+<li>Add\Remove Device (just creates\deletes the folder with the hostanem and index file with the redirect).</li>
+</ul>
+<div class="pad"></div>
+<ul>
+<li style="list-style: none"><b class="greenfont">Groups</b></li>
+<li>Allow user to create or delete a group.</li>
+<li>Allow user to add or remove devices from a group.</li>
+<li>Allow user to assign a playlist to a group.</li>
+<li>When a device is removed from a group, the hostname index.html should be updated so that it points to the default playlist.</li>
+</ul>
+<div class="pad"></div>
+<ul>
+<li style="list-style: none"><b class="greenfont">Images</b></li>
+<li>Create or delete image libraries.</li>
+<li>Upload, download or delete Images from a library.</li>
+</ul>
+<div class="pad"></div>
+<ul>
+<li style="list-style: none"><b class="greenfont">Playlists</b></li>
+<li>Create, edit or delete playlists.</li>
+<li>Add\Remove images from from a playlist.</li>
+<li>Edit playlists (order the slides, set duration for each image, set transition type)</li>
+</ul>
+<div class="pad"></div>
+<ul>
+<li style="list-style: none"><b class="greenfont">Scheduler</b></li>
+<li>Create an assignable schedule for playlist changes: daily schedules, and by date.</li>
+<li>User should be able to assign a scheudle to a device or group of devices</li>
+</ul>
+</section>
+</main>
+</div>
+</div>
+<!-- Footer -->
+<div class="footer" id="myFooter"></div>
+<!-- END: Footer -->
+</body>
+</html>

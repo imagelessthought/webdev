@@ -1,0 +1,48 @@
+<!-- Page Content -->
+<script>
+  $("head").append("<title>College of Visual Arts and Design</title>");
+  $("head").append("<link rel='icon' type='image/x-icon' href='/assets/images/_archive_favicons/favicon.ico'>"); 
+</script>
+<div id="my-left-nav">
+  <a class="side left-tab1" href="https://www.facebook.com/UNTCVAD" alt="CVAD Facebook"><span style="position: relative; top: 1em; left: -2.2em; height: auto;">Facebook</span><span style="background-image: url('/assets/images/_archive_logos/facebook-sm2.svg')" class="badge-left"></span></a>
+  <a class="side left-tab2" href="https://www.instagram.com/UNTCVAD" alt="CVAD Instagram"><span style="position: relative; top: 1em; left: -2.2em; height: auto;">Instagram</span><span style="background-image: url('/assets/images/_archive_logos/instagram-sm2.svg')" class="badge-left"></span></a>
+  <a class="side left-tab3" href="https://twitter.com/UNTCVAD" alt="CVAD Twitter"><span style="position: relative; top: 1em; left: -2.2em; height: auto;">Twitter</span><span style="background-image: url('/assets/images/_archive_logos/twitter-sm2.svg')" class="badge-left"></span></a>
+  <a class="side left-tab4" href="https://www.flickr.com/photos/unt" alt="CVAD Flickr"><span style="position: relative; top: 1em; left: -2.2em; height: auto;">Flickr</span><span style="background-image: url('/assets/images/_archive_logos/flickr-sm2.svg')" class="badge-left"></span></a>
+  <a class="side left-tab5" href="https://www.linkedin.com/edu/school?id=19538&trk=edu-cp-title" alt="CVAD Linked-In"><span style="position: relative; top: 1em; left: -2.2em; height: auto;">LinkedIn</span><span style="background-image: url('/assets/images/_archive_logos/linkedin-sm2.svg')" class="badge-left"></span></a>
+  <a class="side left-tab6" href="https://www.pinterest.com/UNTCVAD" alt="CVAD Pinterest"><span style="position: relative; top: 1em; left: -2.2em; height: auto;">Pinterest</span><span style="background-image: url('/assets/images/_archive_logos/pinterest-sm2.svg')" class="badge-left"></span></a>
+  <a class="side left-tab7" href="https://bit.ly/UNTCVAD-YT" alt="CVAD You Tube Channel"><span style="position: relative; top: 1em; left: -2.2em; height: auto;">YouTube</span><span style="background-image: url('/assets/images/_archive_logos/youtube-sm2.svg')" class="badge-left"></span></a>
+</div>
+
+<div class="hero-tab-container">
+<div class="hero-tab">
+<div style="width: 100%; max-width: 300px;"> 
+<h2 class="center" style="color: white">What do you do?</h2>
+<hr>
+<p style="text-align: justify;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+</div>
+</div>
+</div>
+
+<div class="main-hero-image-container">
+<div class="main-hero-image" style="background-color: #6d6d6d; background-image: url('/assets/images/_archive_cvad/shadow-garden-2022-25-1900x600px.jpg');">
+</div>
+</div>
+
+<script>
+const images = [
+  "/assets/images/_archive_cvad/students-eagle-1900x600px-300kb_0.jpg",
+  "/assets/images/_archive_cvad/shadow-garden-2022-25-1900x600px.jpg"
+];
+
+const heroImage = document.querySelector(".main-hero-image");
+
+let currentImageIndex = 0;
+
+function rotateImages() {
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  heroImage.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+}
+
+// Set the interval to rotate the images every 5 seconds (5000 ms)
+setInterval(rotateImages, 5000);
+</script>

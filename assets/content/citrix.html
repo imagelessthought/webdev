@@ -1,0 +1,636 @@
+<!-- Page Content -->
+<script>
+  $("head").append("<title>College of Visual Arts and Design | MyLab@UNT: Citrix Workspace</title>");
+  $("head").append("<link rel='icon' type='image/x-icon' href='/assets/images/_archive_logos/logo-citrixworkspace-round-transparent.png'>"); 
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/assets/scripts/head-elements.js"></script>
+<script>  // Uses jquery-3.3.1.js
+$(document).ready(function(){
+   $('#soft-list').load("/assets/content/software-list-citrix.html");
+});
+</script>
+<div class="page-fix">
+<main id="main-content">
+<div class="main">
+<h1 id="main-content">Tutorial: Using Citrix</h1>
+</div>
+</main>
+<section id="introduction">
+<div class="section">
+<p>Remote connections to Windows computers, or streamed applications, on the UNT campus are
+      provided by <b class="semi-bold">Citrix Workspace</b>. <b class="semi-bold">Citrix Workspace</b> is a universal
+      software client that provides secure, high-performance delivery of virtual desktops and applications. Clients are
+      available for all major operating systems and accessible using any modern web browser that supports HTML5.</p>
+<p>Please contact the <a href="https://it.unt.edu/helpdesk" alt="UNT IT Helpdesk"
+        id="uithelp">UNT IT Help Desk</a> if you have any questions, feedback, or encounter any issues with the service.
+</p>
+</div>
+</section>
+
+<section id="citrixlink">
+  <div class="section">
+  <div class="greencard green-standard half" style="margin: 2rem 0 2.5rem 0;"> 
+  <p>The <b>Citrix Workspace</b> app for the MacOS does not work reliably at this time. We have removed it from the lab and classroom computers. A tutorial for accessing Citrix from a web browser on a Mac can be found <a href="/citrix/mac-how-to/" alt="howto-citrix-mac">here</a>.
+  </p>
+  </div>
+  <p>To go directly to the <b class="semi-bold">Citrix</b> login portal you can use the link
+      provided below:</p>
+    <div class="section-text-box-container-50">
+      <div class="section-text-box green-standard">
+
+        <div class="section-2col">
+          <div><a class="invisible" id="citrixportal" href="http://myuntlab.cloud.com" alt="citrix portal"><img
+                style="padding-top: 6px" class="section-links-pic2"
+                src="/assets/images/_archive_logos/logo-citrixworkspace-round-transparent.png"
+                alt="Citrix Workspace"></a>
+          </div>
+          <div style="padding-top: 13px;"><a style="font-size: 20px" id="citrixportal"
+              class="useful-link-button section-button-norm" href="http://myuntlab.cloud.com"
+              alt="Citrix Workspace">Citrix Workspace</a></div>
+        </div>
+        <div class="pad"></div>
+    <p>To see answers to the most commonly asked questions, use the button below to skip to the
+          <b class="semi-bold">Frequently Asked Questions</b> section of this document.</p>
+        <div class="section-ticket-container">
+          <div class="section-ticket-4col">
+            <div>
+          <p class="section-ticket-link" style="width: 100%"><a aria-label="button" role="main" class="ticket-button" id="Citrix FAQ"
+                  href="#citrixfaq" alt="Citrix FAQ">FAQ <b style="color: white;">|</b> Frequently Asked Questions</a>
+              </p>
+            </div>
+          </div>
+        </div>
+    <p>If you encounter an issue while using <b class="semi-bold">Citrix Workspace</b>, you may
+          submit a ticket using the button below.</p>
+        <div class="section-ticket-container">
+          <div class="section-ticket-4col">
+            <div>
+          <p class="section-ticket-link" style="width: 100%"><a aria-label="button" role="main" class="ticket-button" id="submitticket"
+                  href="https://unts.service-now.com/saml_redirector.do?sysparm_uri=/untsportal.do?id=sc_cat_item%26sys_id%3D8e638ab31bb245106253ea45604bcbde"
+                  alt="Submit a Ticket">Citrix <b style="color: white;">|</b> Submit a Ticket</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="pad"></div>
+    <p>In order to access <b class="semi-bold">Citrix Workspace</b>, you will login to with
+          your <b class="semi-bold">UNT Enterprise User ID (EUID)</b> and <em>will be prompted to confirm through
+            multi-factor authentication (MFA)</em> using the <b class="semi-bold">DUO application</b>. For assistance,
+          please use the links below:</p>
+        <div class="section-2col">
+          <div><a class="invisible" id="ams" href="https://ams.untsystem.edu" alt="ams"><img style="padding-top: 8px"
+                class="section-links-pic2"
+                src="/assets/images/_archive_uxwing/identity-verification-icon.svg" alt="ams"></a>
+          </div>
+          <div style="padding-top: 8px;"><a id="ams" style="font-size: 20px;"
+              class="useful-link-button section-button-norm" href="https://ams.untsystem.edu" alt="ams">Account
+              Management </a></div>
+        </div>
+        <div class="section-2col">
+          <div><a class="invisible" id="mfa"
+              href="https://itss.untsystem.edu/divisions/mrs/is/multi-factor-authentication.php" alt="mfa"><img
+                style="padding-top: 8px" class="section-links-pic2"
+                src="/assets/images/_archive_logos/logo-duo-horizontal.png" alt="mfa"></a></div>
+          <div style="padding-top: 8px;"><a id="mfa" style="font-size: 20px;"
+              class="useful-link-button section-button-norm"
+              href="https://itss.untsystem.edu/divisions/mrs/is/multi-factor-authentication.php" alt="mfa">MFA (DUO)</a>
+          </div>
+
+        </div> <!-- End Section Container -->
+        <div class="halfpad"></div>
+      </div>
+    </div> <!-- End Section Container -->
+  </div> <!-- End Section Container -->
+  <div class="halfpad"></div>
+  <div class="section">
+    <div class="anchor_tag"></div>
+    <h2 class="section-title">Getting Started</h2>
+    <p>Below you will find instructions to help get you started on <b>Citrix
+        Workspace</b>.</p>
+      <button id ="software-apps" class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i>
+    <p class="faq-heading">Available software applications</p>
+      </button>
+      <div class="content">
+      <div class="content-box" style="padding: 0!important;">
+      <div id="soft-list"></div>
+      </div>
+      </div>
+        <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i>
+    <p class="faq-heading">Set up Multi-Factor Authentication</p>
+        </button>
+        <div class="content">
+      <p class="content-box">Visit <a id="itssmfa"
+              href="https://itss.untsystem.edu/divisions/mrs/is/multi-factor-authentication.php"
+              alt="itssmfa">Multi-Factor Authentication (DUO)</a> for help on how to get started.</p>
+  
+        </div>
+
+        <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i>
+    <p class="faq-heading">Login using a web browser</p>
+        </button>
+        <div class="content">
+      <p class="content-box">To quickly access the Windows desktop and applications from MyLab using your web
+            browser, simply visit <a id="mylab-citrix" href="http://myuntlab.cloud.com">http://myuntlab.cloud.com</a>
+            and log in with your UNT email address and password. Select <b class="semi-bold">Use web browser</b> when
+            you reach the UNT Citrix Workspace welcome page.</p>
+  
+        </div>
+
+        <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i>
+    <p class="faq-heading">Login using the Citrix Workspace desktop client</p>
+        </button>
+        <div class="content">
+      <p class="content-box">To use the full set of features bundled with Citrix Workspace, you will want to use the
+            desktop client. Simply visit <a id="mylab-citrix"
+              href="http://myuntlab.cloud.com">http://myuntlab.cloud.com</a> and log in with your UNT email address and
+            password. Select <b class="semi-bold">Detect Workspace</b> when you reach the UNT Citrix Workspace welcome
+            page. The website will attempt to detect an existing Citrix Workspace installation and launch the
+            application. If not yet installed, please review the license agreement, check the <b class="semi-bold">I
+              agree</b> box and select <b class="semi-bold">Download</b> to install the Citrix Workspace desktop client.
+          </p>
+  
+        </div>
+
+        <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i>
+    <p class="faq-heading">Accessing your files</p>
+        </button>
+        <div class="content">
+          <div class="content-box">
+            <style>
+                .citrix-pics {
+                    width: 30%;
+                }
+                @media screen and (max-width: 768px) {
+                    .citrix-pics {
+                        width: 100%;
+                    }
+                }
+            
+            </style>
+            <h3><b class="semi-bold">Web browser: you may upload files
+                    from, and download files to, your local computer in two ways:</b></h3>
+        <p><b class="semi-bold">1</b>: &nbsp;Use the Citrix menu at
+                the top-center of your session to select the Upload and Download buttons</p>
+            <div class="pad"></div>
+            <div style="object-fit: contain;">
+                <img 
+                    style="max-width: 100%"
+                    src="/assets/images/_help_tutorials/mylab_webclient_fileaccess.png"
+                    alt="filesacces1">
+            </div>
+            <div class="pad"></div>
+            <div class="pad"></div>
+        <p><b class="semi-bold">2</b>: &nbsp;Drag-and-drop files
+                from your local computer onto your web browser-based application/desktop to
+                trigger the <b class="semi-bold">Upload to</b> prompt where you may select
+                where you want the file(s) uploaded and utilitize the <b
+                    class="semi-bold">Save To My Device</b> option when saving files which
+                will trigger your local browser to download the file.</p>
+            <div class="pad"></div>
+            <img 
+                class="citrix-pics"
+                src="/assets/images/_help_tutorials/mylab_webclient_draganddrop.png"
+                alt="fileaccess2">
+            <br>
+            <br>
+            <img  
+                class="citrix-pics" 
+                src="/assets/images/_help_tutorials/mylab_webclient_savetomydevice.png"
+                alt="fileaccess3">
+            <div class="pad"></div>
+            <div class="pad"></div>
+        <p><b class="semi-bold">3</b>: &nbsp;Additionally, if using
+                the <b class="semi-bold">UNT Desktop</b> you will find shortcuts on the
+                desktop to your UNT OneDrive cloud storage as well as browsers you may use
+                to access your personal, 3rd party storage solution. <b
+                    class="semi-bold">Citrix desktop client</b>: using the Citrix desktop
+                client simplifies file access by making your local computer's storage
+                devices and network shares accessible within the operating system's and the
+                applications' native File Explorers.</p>
+            <div class="pad"></div>
+            <img  
+                class="citrix-pics"
+                src="/assets/images/_help_tutorials/mylab_desktopclient_fileaccess.png"
+                alt="fileaccess4">
+        </div>
+  
+        </div>
+      </div>
+    </section>
+<div class="section">
+<div class="anchor_tag" id="citrixfaq"></div>
+<h2 class="section-title">FAQ: Frequently Asked Questions</h2>
+<p>Below you will find answers to commonly asked questions. If you have a question that is not addressed, please contact the <a href="https://it.unt.edu/helpdesk" alt="UNT IT Helpdesk" id="uithelp">UNT IT Help Desk</a>. We appreciate any feedback we receive.</p>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+What is Citrix?
+</p></button>
+<div class="content">
+<p class="content-box">
+Citrix is an application and desktop virtualization platform that enables UNT to present and share software with students from anywhere globally. It requires an internet connection and any device running Windows, Linux, Mac, iOS, or Android. This allows students, faculty, and staff to use UNT software and network resources to use a "Virtual Lab" computer or Stream Application right to your remote desktop or laptop.
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+What are the hours of availability?
+</p></button>
+<div class="content">
+<p class="content-box">
+Citrix is available every day and is never shut off unless we need to update that takes the service down.  Citrix may not be available during the following times: Monday through Friday, 1 a.m. to 4 a.m.  During the times above, we may disable the service to perform updates. Please plan accordingly.
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+What is the best browser to use? 
+</p></button>
+<div class="content">
+<p class="content-box">
+For the ideal experience, we suggest MS Edge or Google Chrome when using the locally installed Citrix Workspace or Workspace for HTML5 on Windows 10. We also recommend using Safari when using a Mac. Below you will see a list of supported browsers:<br><br>
+Apple Safari 7 or later<br>
+Google Chrome 50 or later<br>
+Microsoft Edge<br>
+Mozilla Firefox 35 or later<br>
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+What operating systems can I use?
+</p></button>
+<div class="content">
+<p class="content-box">
+Windows 10<br>
+Windows 11<br>
+Windows Thin PC<br>
+macOS Monterey (up to 12.5.1)<br>
+macOS Big Sur 11<br>
+macOS Catalina 10.15<br>
+iOS<br>
+Android<br>
+Chromium<br>
+</p>
+
+</div>
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+How do I install the Citrix Workspace App on a Chromebook or ChromeOS? 
+</p></button>
+<div class="content">
+<p class="content-box">
+Visit the <a href="https://chrome.google.com/webstore/detail/citrix-workspace/haiffjcadagjlijoggckpgfnoeiflnem?hl=en" alt="Chrome Webstore">Chrome Web Store</a> to download the Citrix Workspace app.
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+When I try to log into Citrix, I get an incorrect username and/or password? 
+</p></button>
+<div class="content">
+<p class="content-box">
+Please ensure you use your correct student email address and password, same username and password used for email. If you continue to have issues logging in, contact the <a href="https://it.unt.edu/helpdesk" alt="UNT Helpdesk">UNT IT Help Desk</a> at 940-565-2324.
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+How do I set up MFA (Multi-Factor Authentication)?
+</p></button>
+<div class="content">
+<p class="content-box">
+For information on setting up Multi-Factor Authentication, please visit: <a href="https://itss.untsystem.edu/divisions/mrs/is/multi-factor-authentication.php" alt="mfa">UNT DUO Authentication</a>.  
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+Who do I contact if I am having issues setting up MFA (Multi-Factor Authentication)?
+</p></button>
+<div class="content">
+<p class="content-box">
+Contact the <a href="https://it.unt.edu/helpdesk" alt="UNT Helpdesk">UNT IT Help Desk</a> at 940-565-2324.
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+Should I set up a DUO backup device? 
+</p></button>
+<div class="content">
+<p class="content-box">
+Yes, please do. Visit: <a href="https://itss.untsystem.edu/divisions/mrs/is/multi-factor-authentication.php" alt="mfa">UNT DUO Authentication</a> for more information.
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+What if I have no smartphone or do not want to use my smartphone for DUO?
+</p></button>
+<div class="content">
+<p class="content-box">
+A commercially available <a href="https://www.amazon.com/Yubico-Security-USB-Factor-Authentication/dp/B07M8YBWQZ?th=1" alt="yubikey">Yubikey USB token</a> works with DUO, and is a basic USB type-A unit that can be used on your computer, smartphone, or tablet. There are more advanced units that have multiple interface types and NFC functionality. The advantage of these commercial tokens is that they can be self-registered by users through the DUO portal.
+Time-Based One-Time Passcodes, SMS Passcodes & Phone Callback, and Security Tokens: See <a href="https://duo.com/product/multi-factor-authentication-mfa/authentication-methods/tokens-and-passcodes" alt="yubikey2">Two-Factor Authentication Methods-Tokens & Passcodes | Duo Security</a>.
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+ What's the difference between a Virtual Application and a Virtual Desktop?
+</p></button>
+<div class="content">
+<p class="content-box">
+A virtual application and virtual desktop have a few differences. When you click a Virtual Application...you are only shown the application. When you use a virtual desktop, you are presented with UNT-owned software's fully functional Windows computer.
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+How do I use multiple monitors for my virtual desktop?
+</p></button>
+<div class="content">
+<p class="content-box">
+With your desktop in window mode, drag the window to span the split between the monitors you want it to use. Once it is visible on both screens, when you press the button for full screen in the toolbar, it will use all of the monitors that it is on. You may have to stretch it if you wish to use more than 2 monitors. All screens must have the exact resolution and orientation (portrait or landscape, not a combination).
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+What should I do if my mouse cursor clicks in a spot away from my cursor?
+</p></button>
+<div class="content">
+<p class="content-box">
+There are a couple of causes for this behavior. If you have multiple monitors set at different resolutions or orientations, that can cause problems. If your monitor is set at a scaling percentage other than 100%, that can cause problems too. Opening your display settings and selecting the scale to 100% should correct that.
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+Where should I save files?
+</p></button>
+<div class="content">
+<p class="content-box">
+We suggest you use the following locations:<br><br>
+- Using the Citrix Workspace app for Windows/Mac, look for the local desktop or laptop drive to import/export data for applications.<br>
+- Using the Citrix Workspace in Web Browser, you can download and upload files through the browser; you will have to accept the prompt for file access when you log in the first time on a new computer.<br>
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+Who should I contact if I'm having trouble logging into Citrix?
+</p></button>
+<div class="content">
+<p class="content-box">
+Please contact the <a href="https://it.unt.edu/helpdesk" alt="UNT Helpdesk">UNT IT Help Desk</a> and they can help you get Citrix working on your computer or laptop. The number to reach the UNT IT Help Desk is 940-565-2324.
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+Who should I contact if I'm having trouble using an application in Citrix? 
+</p></button>
+<div class="content">
+<p class="content-box">
+All questions regarding using an application for your class should be directed to the <a href="https://it.unt.edu/helpdesk" alt="UNT Helpdesk">UNT IT Help Desk</a> 940-565-2324.
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+How do I save files using Citrix Workspace App for HTML5 (web browser)?
+</p></button>
+<div class="content">
+<p class="content-box">
+This document will outline how to get files to a Citrix virtual desktop from a local desktop/laptop while using Citrix Workspace app for HTML5. This article does not apply to the Citrix Workspace app for Windows/Mac users. We recommend using Google Chrome as the browser while using Citrix Workspace App for HTML5 and this document.
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+How do I download a file from a Citrix desktop to my local computer?
+</p></button>
+<div class="content">
+<p class="content-box">
+This will guide you on how to take a file that is currently on your Citrix Desktop and save it to your local computer.<br><br>
+1. From within the Citrix Desktop, click the half-circle button at the top of the window (with 3 horizontal lines) to expose the toolbar.<br><br>
+2. Once the Citrix toolbar is expanded, click the download button.<br><br>
+3. Browse the file on the Citrix desktop that you want to download to your local desktop.<br><br>
+4. Click the file you want to download to your local desktop and click "open".<br><br>
+5. Now, a window will appear on your local desktop, asking where you want to save the file. Browse to any location on your local computer where you wish to save the file and hit save. Think of this as downloading a file from a website and saving it to your local machine.<br><br>
+6. Once the file has been downloaded, you now have it on your local machine.<br><br>
+</p>
+</div>
+</div>
+</section>
+<section>
+<div class="section">
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+How do I upload a file from my local computer to a Citrix desktop ?
+</p></button>
+<div class="content">
+<p class="content-box">
+This will guide you on how to take a file currently on your local computer and save it to a Citrix Desktop.<br><br>
+1. From within the Citrix Desktop, click the half-circle button at the top of the window (with 3 horizontal lines) to expose the toolbar.<br><br>
+2. Once the Citrix toolbar is expanded, click the upload button.<br><br>
+3. An open file dialog will appear on your local computer. Browse to a file you wish to upload to the Citrix desktop, then click "Open."<br><br>
+4. From within the Citrix Desktop, choose the location you wish to save the new file. Then click "OK."<br><br>
+5. After a few moments, the file will appear at the location you chose on the Citrix desktop.<br><br>
+</p>
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+How do I install the Citrix Workspace App on Windows?
+</p></button>
+<div class="content">
+<p class="content-box">
+This document outlines installing the Citrix Workspace App for a Windows Computer. The Citrix Workspace app runs Virtual Applications & Desktops and must be installed on your computer for them to work.<br><br>
+1. Open your internet browser of choice (we suggest Google Chrome).<br><br>
+2. Navigate to https://www.citrix.com/downloads/workspace-app/windows/workspace-app-for-windows-latest.html.<br><br>
+3. Click the button labeled "Download Citrix Workspace app for Windows."<br><br>
+4. Save to your downloads folder.<br><br>
+5. Open your downloads folder.<br><br>
+6. Double click "CitrixWorkspaceApp" icon to run the installer.<br><br>
+7. Click "Yes" to the pop-up asking if you would like to allow the app to make changes to your computer (not everyone will get this pop-up).<br><br>
+8. In the "Welcome to Citrix Workspace" window, click the "Start" button.<br><br>
+9. Check the "I Accept the License Agreement" box on the License Agreement window and click the "Install" button.<br><br>
+10. Click the "Finish" button on the successful Installation window. (Do not add an account, this is not necessary).<br><br>
+11. Citrix Workspace App is now installed on your computer and ready to use.<br><br>
+</p>
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+How do I install the Citrix Workspace App on Mac?
+</p></button>
+<div class="content">
+<p class="content-box">
+This document outlines installing the Citrix Workspace App for a Mac computer. The Citrix Workspace app runs the Virtual Applications & Desktops and must be installed on your computer for them to work.<br><br>
+1. Open your internet browser of choice (we suggest Google Chrome).<br><br>
+2. Navigate to https://www.citrix.com/downloads/workspace-app/mac/workspace-app-for-mac-latest.html.<br><br>
+3. Click the "Download Citrix Workspace app for Mac" button to download the installer file.<br><br>
+4. Save the file to your downloads folder (Safari does this by default).<br><br>
+5. Navigate to your "Downloads" folder and double-click the CitrixWorkspaceApp.dmg file.<br><br>
+6. Double-click the "Install Citrix Workspace" button.<br><br>
+7. Click the "Continue" button on the "This package will run a program to determine if the software can be installed" prompt.<br><br>
+8. Click the "Continue" button on the Welcome to the Citrix Workspace Installer window.<br><br>
+9. Click the "Continue" button on the Welcome to the Software License Agreement window.<br><br>
+10. Click the "Agree" button to agree to the terms of the software license agreement.<br><br>
+11. Click the "Install" button to install to the default location.<br><br>
+12. Type in your Mac Username and Password (not Apple ID username/password) and then click the "Install Software" button.<br><br>
+13. Leave the "Add Account" check box unchecked and click the "Continue" button.<br><br>
+14. Click the "Close" button.<br><br>
+15. Click the "Move to Trash" button (this will delete the download files to save hard drive space).<br><br>
+16. Citrix Workspace App is now installed on your Mac and is ready to be used.<br><br>
+</p>
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+How do I set up USB devices and drives with my Citrix Virtual Desktop on a Chromebook?
+</p></button>
+<div class="content">
+<p class="content-box">
+This is the first-time setting-that once set -- any USB devices should work or "pass-through" to your Citrix Environments.<br><br>
+1. Insert your USB device in the Chromebook.<br><br>
+2. You might see the following screen pop-up. If you can, click on Open Settings, which will take you to Step 8. If not, follow Step 3!<br><br>
+3. Click on your time in the lower right corner.<br><br>
+4. Click on the Settings gear icon.<br><br>
+5. Click on the Device on the right side of the screen.<br><br>
+6. Click on Storage Management.<br><br>
+7. Click on External Storage Preferences.<br><br>
+8. Click on the switch to turn it blue -- so it is enabled.<br><br>
+9. Then, you will want to remove the USB device -- if it is a thumb drive, do the following. All other devices can be unplugged and skip to Step 12. Click on the Round dot in the left corner and search for Files.<br><br>
+10. Click on the Files icon.<br><br>
+11. Click on the Eject Button next to the USB drive.<br><br>
+12. Launch Citrix Workspace.<br><br>
+13. Click on the Settings gear icon in the top right corner.<br><br>
+14. Click on Settings.<br><br>
+15. Click on Advanced.<br><br>
+16. Click on Use Device Storage.<br><br>
+17. Select Full Access.<br><br>
+18. Verify that Full Access is listed under Use Device Storage.<br><br>
+19. Then access your virtual desktop usually.<br><br>
+20. Plug in your USB device.<br><br>
+21. If it is a thumb drive or file storage --you should see the device appear on This PC. If it is another device, the software should now recognize that device.<br><br>
+</p>
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+Can I use Citrix to video conference while showing my students my desktop?
+</p></button>
+<div class="content">
+<p class="content-box">
+We don't recommend Citrix for video conferencing for any purpose. Instead, we recommend using your local device to run Zoom or whatever software you use for video conferencing. Once you have started Zoom, you can share the entire screen with your students and then launch the Citrix Desktop or Application, and they will be able to follow along.
+</p>
+
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+My Mac keyboard shortcuts do not work correctly while using an app. What should I do?
+</p></button>
+<div class="content">
+<p class="content-box">
+Note that Citrix apps run on a Windows server, like running a virtual Windows machine. Therefore, we recommend using Windows keyboard shortcuts (e.g., Ctrl+C instead of Cmd+C to copy selected texts) while using the apps or modifying your shortcut settings for the apps.
+</p>
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+What happens if I lose my internet connection while using an app?
+</p></button>
+<div class="content">
+<p class="content-box">
+Because the Citrix system is like accessing a remote computer, you cannot use the app until you re-establish your connection. However, the remote session will continue for up to 1 hour. The next time you connect within that hour, your session will open in the same state as when you lost your connection.
+</p>
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+How do I know whether I have already installed the Citrix Workspace App?
+</p></button>
+<div class="content">
+<p class="content-box">
+<b class="semi-bold">For Mac users</b>:<br><br>
+Click "Applications" on the Dock panel.<br><br>
+Find "Citrix Workspace.app" from the list of installed programs.<br><br>
+You can also find the Citrix Workspace Icon in the upper-right corner of the top menu bar.<br><br><br>
+<b class="semi-bold">For Windows users</b>:<br><br>
+Open "Control Panel."<br><br>
+Click the magnifying glass icon on the taskbar and type "Citrix" in the search box.<br><br>
+If Citrix Workspace shows up in the list, it is installed.<br><br>
+</p>
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+Which Citrix Workspace App should I install?
+</p></button>
+<div class="content">
+<p class="content-box">
+It depends on the type (e.g., macOS, Windows, and Linux) and your operating system (OS) version. Check your OS version from Mac or Windows PC as described below. Visit "Installing the Citrix Workspace Client" for more information. You can check your OS version by following the instructions below.<br><br>
+<b class="semi-bold">For Mac users</b>:<br><br>
+Click the Apple icon on the Apple menu and choose "About This Mac."<br><br>
+MacOS 10.15, Big Sur 11.01+: The latest app, as of September 17, 2021<br><br>
+MacOS 10.14 and 10.13: Earlier versions > 2008<br><br>
+MacOS 10.12 and 10.11: Earlier versions > 1906<br><br><br>
+<b class="semi-bold">For Windows users</b>:<br><br
+Press the Windows key + R, type "winver,"and press Enter.<br><br>
+Windows 10 and 8.1: The latest app, as of September 17, 2021<br><br>
+Windows 7: 2002 Once you figure out your OS type and version, go to https://www.citrix.com/downloads/workspace-app/ and download the Citrix Workspace app that is compatible with your computer.<br><br>
+After logging in, I cannot launch a program (e.g., Stata) from Citrix.<br><br>
+If an application fails to launch, wait 5 minutes and try again. If the application continues to fail to launch, please contact the <a href="https://it.unt.edu/helpdesk" alt="UNT Helpdesk">UNT IT Help Desk</a> at 940-565-2324.<br><br>
+</p>
+</div>
+
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+When I click on the app icon, it prompts downloading an '.ica' file. 
+</p></button>
+<div class="content">
+<p class="content-box">
+Try the solutions below one at a time in the following order.<br><br>
+- Ensure that you have the Citrix Workspace App installed.<br><br>
+- Uninstall the Citrix Workspace App and re-install the latest compatible app if the Citrix Workspace app is already installed.<br><br>
+- Update your web browser (Chrome, Firefox, Safari, or MS IE/Edge).<br><br>
+- If you use Chrome, click the carat next to the downloaded .ica file. Check the box next to "Always Open Files of This Type."
+- Reset Citrix Workspace App<br><br>
+- If the Citrix Workspace App is not working, you can reset it to its default configuration. This article describes the steps necessary to reset the Citrix Workspace App on a Windows Desktop or Mac.<br><br><br>
+<b class="semi-bold">For Mac users:</b>:<br><br>
+1. Open the Citrix Workspace App.<br><br>
+2. In the upper left corner of your screen, click on Citrix Workspace and select Preferences next to the Apple symbol.<br><br>
+3. In the Preferences window, click on the Accounts tab, then select the Primary store account shown in the middle of the window. Next, click the Minus button and OK to confirm removing the account.<br><br>
+4. Close the Preferences window and click Set Up Account. In the Add account window, enter the following https://myuntlab.cloud.com.<br><br><br>
+<b class="semi-bold">For Windows users</b>:<br><br>
+1. Launch the Citrix Workspace App from your Start Menu.<br><br>
+2. After the Citrix Workspace has launched, click on the Workspace icon, and select Advanced Preferences.<br><br>
+3. Click on Reset Citrix Workspace.<br><br>
+4. You will get a pop-up asking if you want to reset the Citrix Workspace and click yes.<br><br>
+5. Select OK, and your Citrix Workspace should automatically relaunch.<br><br>
+</p>
+</div>
+</div>
+</section>
+<!-- SAVE FOR FUTURE FAQS
+<div class="section">
+<button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">  
+ 
+</p></button>
+<div class="content">
+<p class="content-box">
+
+</p>
+
+</div></div>
+-->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </div> <!-- End PAGE -->

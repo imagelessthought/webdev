@@ -1,0 +1,450 @@
+<style>
+
+  .faq-title {
+    color: #C5E1A5;
+    text-align: left; 
+  }
+
+  .faq-p {
+    color: white;
+    text-align: left; 
+  }
+
+  .faq {
+    width: 2rem; height: 2rem;
+    margin-right: 1rem;
+  }
+
+
+  .center {
+      margin: auto!important;
+      text-align: center!important;
+      width: 100%;
+  } 
+     .tagline {margin-top: 0; color: white;}
+      .text-container {
+          margin: 0 auto;
+          width: 85%;
+          border-radius: 4px;
+          border: 1px solid #C5E1A5;
+          padding: 0 1rem;
+      }
+  
+      b {
+          background-color: transparent;
+      }
+  
+      b.yellow {
+          color: yellow;
+      }
+      b.pad {margin: 0 1rem;}
+  
+      p {
+          line-height: 1.7!important;
+          color: #EAEDED;
+      }
+  
+    em {
+      color: #C5E1A5;
+      font-style: normal;
+      border-bottom: 2px solid #FF3366;
+    }
+  
+      svg {
+          background-color: inherit!important;
+      }
+      h3 {
+       font-size: .8rem;
+       font-weight: 400;
+       color:#C5E1A5;
+       margin: 2rem 0 1rem 0;
+       background-color: #006A31;
+       padding: .2rem;
+       border-radius: 4px;
+       border: 1px solid #C5E1A5;
+       width: 100%;
+       text-align: left;
+      }
+      
+          .screenreader-text {
+      position: absolute;
+      left: -999px;
+      width: 1px;
+      height: 1px;
+      top: auto;
+          }
+      
+          .screenreader-text:focus {
+      color: black;
+      display: inline-block;
+      height: auto;
+      width: auto;
+      position: static;
+      margin: auto;
+          }
+      
+      a:link, a:visited {
+      color: #C5E1A5;
+      background-color: transparent;
+      text-decoration: none;
+          }
+      
+      a:hover {
+      color: #81D4FA;
+      background-color: transparent;
+          }
+     
+             a:active {
+              color: #C0392B;
+              background-color: transparent;
+                  }
+              
+              a.dashboard-link:link, a.dashboard-link:visited {
+              color: #37474F;
+              background-color: #AED6F1;
+              text-decoration: none;
+              font-size: .7rem;
+              font-weight: 400;
+              padding: .25rem;
+              border-radius: 4px;
+              border: 1px solid #ECEFF1;
+              width: 100%;
+                  }
+              
+              a.dashboard-link:hover {
+              color: white;
+              background-color: #0288D1;
+              border: 1px solid #0288D1;
+                  }
+              
+              a.dashboard-link:active {
+              color: yellow;
+              background-color: #C0392B;
+              border: 1px solid #C0392B;
+                  }
+             
+      .frame-outer {
+      border: 9px solid #C5E1A5;
+      background-color: white;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: auto;
+          }
+      
+      .frame-inner {
+      border: 1px solid black;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: auto;
+          }
+      
+          .dash-flex {
+            display: flex;
+            gap: 0px 2rem;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            height: auto;
+            text-align: left;
+            width: 100%;
+                }
+      
+      .flex5 {
+          padding: 0; margin: 0 0 .1rem 0; line-height: 1.9;
+        text-align: left;
+          }
+    
+      .flex5-2 {
+          padding: 0; margin: 0 0 .1rem 0; line-height: 1.9;
+          text-align: left;
+      }
+    
+      .flexhead {display: grid; grid-template-columns: 75% 25%; gap: 0; width: 90%; height: auto; margin: 0 auto; text-align: center; align-items: center;}
+    
+      .nomarg {margin: 0!important; padding: 0!important;}
+  
+      .cool-space {
+          padding: 0;
+          margin: 0;
+       }
+      
+       .cool-grid {
+          display: grid;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0px 1rem;
+          grid-template-columns: 4rem 4rem 4rem 4rem 4rem;
+          height: auto;
+          margin: .5rem auto 1.5rem auto;
+          padding: 0;
+          width: 75%;
+       }
+       
+       .cool-button {
+          width: 40%;
+      }
+       
+       .cool-box {
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          border-radius: 4px;;
+          margin: 1.5em 1em 1em 1em;
+          height: auto;
+          display: block;
+          background-color: #006A31;
+          transition: all 300ms;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          overflow: hidden;
+          text-decoration: none;
+       }
+  
+       .div_coolbutton {
+          width: 100%;
+          height: 100px;
+          margin: 0;
+          text-decoration: none;
+          border-radius: 4px;
+          background-color: #006A31;
+          color: white;
+          text-decoration: none;
+      }
+      
+      .div_coolbutton:hover {
+        color: #006A31; 
+        background-color: #C5E1A5;
+      
+       }
+       
+       .div_coolbutton:active {
+        background-color: #C0392B;
+        color: #ffa500; 
+  
+      }
+  .div_coolbutton {
+      background-color:#006A31;
+  }
+  
+     a.flip:hover {transform: scale(1.25); transition: transform 0.5s;}
+  
+     .greencard {
+      box-shadow: 0 0 0 2px rgba(197, 225, 165,1), 8px 8px 0 0 rgba(197, 225, 165,1);
+      width: 40rem;
+      height: auto; 
+      padding:.5rem 1.5rem 1rem 1.5rem;
+      margin: 2rem auto 2.5rem auto;
+      border-radius: 1rem; 
+      text-align: left;   
+      text-align: justify; text-justify: inter-word; word-wrap: break-word;
+      display: inline-block;
+  }
+  
+  .section-ticket-container {display: flex; padding: 0; margin: 0 auto 0 auto; width: 35rem; text-align: center; justify-content: center;}
+  .section-ticket-link {font-weight: 400; margin: 0 auto; padding: 0px 0px 0px 0px; width: 100%; line-height: 2.0; display: flex; background-color: inherit; align-content: center; align-items: center;}
+  .section-ticket-4col {display: flex; flex-direction: row; gap: 0; margin: 0 auto 0 auto;}
+  
+  a.ticket-button {display: flex; margin: .5rem auto; text-align: center; text-decoration:none; font-weight: 800; border-radius: 4px; height:auto; width: 100%; text-align: left; padding: .5rem 1rem; outline: 0px solid transparent; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;}
+  
+  a.ticket-button:link, a.ticket-button:visited {color: white; background-color: #006A31; border: 2px solid #006A31;}
+  a.ticket-button:hover  {color: #006A31; background-color:#C5E1A5; border: 2px solid #C5E1A5;}
+  a.ticket-button:active  {color: #ffa500; background-color:#C0392B; border: 2px solid #C0392B;}
+  
+  .div_coolbutton:hover {
+  color: #006A31; 
+  background-color: #C5E1A5;
+  
+  }
+  
+  .div_coolbutton:active {
+  background-color: #C0392B;
+  color: #ffa500; 
+  
+  }
+      @media (prefers-reduced-motion) {
+          a.flip:hover {
+              transform: none;
+          }
+      }
+      
+  
+      @media screen and (max-width: 600px) {
+          .cool-space {
+          padding: 20px 0px;
+          }
+          .cool-box {
+          flex: 0 0 70%;
+           }
+       }
+      
+       @media screen and (max-width: 900px) {
+   
+           .cool-box {
+          flex: 0 0 60%;
+           }
+   
+        img:hover {
+            transform: none;
+            -ms-transform: none; /* IE 9 */
+            -moz-transform: none; /* Firefox */
+            -webkit-transform: none; /* Safari and Chrome */
+            -o-transform: none; /* Opera */
+          }
+      }   
+       @media screen and (max-width: 1200px) {
+          .cool-grid {
+          flex-wrap: wrap;
+          gap: 1rem;
+          padding: 1.5rem 0;
+          }
+          .cool-box {
+          flex: 0 0 50%;
+          }
+       
+        }
+      
+       @media screen and (max-width: 1400px) {
+          .cool-grid {
+          width: 100%;
+       }
+      }
+    
+      </style>
+  <script src="https://kit.fontawesome.com/a085645410.js" crossorigin="anonymous"></script>
+  <div style="width: 100%">
+     <div class="flexhead">
+         <div style="width: 100%; height: auto; text-align: left; align-items: center; padding-left: 0;">
+          <h1 style="color: #C5E1A5; font-weight: 400; margin-bottom: 1rem;">University of North Texas</h1>
+          <h2 style="font-weight: 400;" class="nomarg"><b class="yellow">Need help?</b></h2>
+            <div class="tagline">Check out our FAQ (Frequently Asked Questions) below:</div>
+  
+         </div>
+         <div style="width: 100%; height: auto; text-align: right; margin-top: 1rem;">
+            <img style="width: 25%; height: auto;" src="/assets/images/favicons/unt_logo_fixed.png">
+         </div>
+     </div>
+  </div>
+  <hr style="height: 1px; border: 1px solid transparent; border-bottom: 1px solid #C5E1A5; margin: 1rem auto 0rem auto; width: 91%; padding: .2rem;">
+  <div style="width: 90%; margin: 0 auto; text-align: center;">
+  <main>
+  <div class="main">
+  <h2 class="faq-title">Frequently Asked Questions (FAQ)</h2>
+  </div>
+  </main>
+
+  <div>
+    <p class="faq-p">Below you will find answers to commonly asked questions. Most likely, you will
+      be able to find the answers to any questions you may have. However, if you have a question that is not
+      addressed you do not find an answer to your question, please <a id="emailcvadit-text"
+        href="mailto:cvad.itservices@unt.edu?subject=WEBFORM: FAQ" alt="FAQ">email</a> us. We appreciate any feedback
+      we receive and will update our documentation and make changes to services as appropriate.</p>
+    <div>
+
+      
+      <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right dgreenfont faq"></i><p class="faq-heading">What are the normal operating hours of the Art Building and
+        Art Building Annex? How can I get card swipe access to a room?</p></button>
+      <div class="content">
+        <p class="content-box">The current hours of operation for the Art and Art Annex buildings can be found
+          <a id="current-hours" href="https://cvad.unt.edu/hours" alt="Building Hours">here</a>. Information on
+          requesting after-hours access to either building, can be found can also be found on the page. If you
+          need to request swipe card access to a room you are using this semester, you can click <a
+            href="mailto:cvadroomaccess@ad.unt.edu?Subject=WEBFORM: Requesting Swipe Access">here</a> to submit
+          a request by email.</p>
+
+      </div>
+
+      <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right greenfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">How do I connect to the UNT Campus Wi-Fi network(s)?</p></button>
+      <div class="content">
+        <p class="content-box">The UNT Campus provides Wi-Fi access to all faculty, staff, students, and guests.
+          For information on connecting to the general campus wi-fi networks (SSID: Eaglenet, UNT) you can go <a
+            href="https://itss.untsystem.edu/divisions/ets/esis/datacomm/wifi/wifi-setup-guides.php"
+            alt="Campus WiFi Info">here</a>. Students that are living on-campus have access to the ResNet wi-fi
+          network while in UNT Housing. Information on ResNet can be found <a href="https://www.myresnet.com"
+            alt="Resnet Info">here</a>. The UNT Campus also provides wi-fi access through the <a
+            href="https://incommon.org/eduroam/" alt="Eduroam Website">Eduroam</a> service: information on using
+          this service on the UNT campus can be found <a
+            href="https://itss.untsystem.edu/divisions/ets/esis/datacomm/wifi/" alt="UNT Eduroam Info">here</a>.
+          If you are a guest, please have the sponsor of your visit contact us and we can create a temporary UNT
+          campus wireless account for you to use during your visit.</p>
+
+      </div>
+
+      <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right dgreenfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">How can I print?</p></button>
+      <div class="content">
+        <p class="content-box">Students are able to print their documents in the CVAD Computer Lab, located in
+          ART 371. CVAD Employees, in addition to any departmental printers they may have access to, have access
+          to the shared printer and copier located in ART 235 (requires swipe card access). All students,
+          faculty, and staff can submit print jobs through the <a href="https://papercut.acs.unt.edu"
+            alt="Webprint">Web Print portal</a>.</p>
+
+      </div>
+
+      <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right dgreenfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">Where do I go to complete the Annual Security Awareness
+        Training?</p></button>
+      <div class="content">
+        <p class="content-box">There are two parts to the Annual Security Awareness Training. You may complete
+          both sections in <a href="https://unt.bridgeapp.com" alt="UNT Bridge">UNT Bridge</a>.</p>
+
+      </div>
+
+      <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right dgreenfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">I am having trouble with DUO Multi-Factor Authentication.
+        Where can I go for help?</p></button>
+      <div class="content">
+        <p class="content-box">Information on the UNT Multi-factor Authentication can be found <a
+            href="https://itss.untsystem.edu/divisions/mrs/is/multi-factor-authentication.php"
+            alt="MFA DUO Help">here</a>. If you need to enroll a device, change the device you have enrolled, or
+          make any other changes you will be able to do so by logging in to the UNT System <a
+            href="https://mfa.untsystem.edu" alt="MFA Portal">MFA Portal</a>.</p>
+
+      </div>
+
+
+      <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right dgreenfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">How do I reset my EUID account password?</p></button>
+      <div class="content">
+        <p class="content-box">You can reset the password on your UNT account by going to the UNT System <a
+            href="https://ams.unt.edu" alt="AMS">Account Management System</a>.</p>
+
+      </div>
+
+      <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right dgreenfont" style="width: 2rem; height: 2rem;"></i><p class="faq-heading">I am a student and would like to purchase an <b class="semi-bold">Adobe Creative
+            Cloud</b> subscription. What is the cost and where can I purchase?</p>
+      </button>
+      <div class="content">
+        <p class="content-box">The cost of a personal subscription is $55.55, including all fees. These are
+          <em>educational institution</em> subscriptions, meaning they expire at the end of the current academic
+          year <em>regardless of when purchased</em>. You can get the full details on the offer and may purchase
+          a subscription by visiting <a href="https://www.unt.edu/adobe"
+            alt="Adobe Webstore">www.unt.edu/adobe</a>. <b>These are only available to currently enrolled
+            <em>students</em></b>.</p>
+
+      </div>
+
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </div> <!-- End Section Container -->
+
+  <!-- END: FAQ Collapsible -->
+  <div class="end"></div>
+</div><!-- End: Page Container -->
+</body>

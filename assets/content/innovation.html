@@ -1,0 +1,62 @@
+<!-- Page Content -->
+<script>
+  $("head").append("<title>College of Visual Arts and Design | Innovation Technology Working Group</title>");
+  $("head").append("<link rel='icon' type='image/x-icon' href='/assets/images/_archive_custom/innovate.svg'>"); 
+</script>
+<div class="page">
+<main id="main-content">
+<div class="main">
+<h1>Technology Innovation Group</h1>
+</div>    
+</main>
+
+<section id="introduction">
+<div class="section">
+<p>The <b>College of Visual Arts and Design, Information Technology Services</b> department hosts the <b class="greenfont">Technology Innovation Group</b>. The group is open to all faculty, staff (including System) and students. The group was formed when CVAD was programming for our <a href="https://cvad.unt.edu/new-building" alt="Article on New CVAD Building">new building, which opened in 2019</a>, with the intent of developing solutions that could be used in our redesigned classrooms/classlabs or elsewhere in the college.  Starting around the time of the COVID outbreak, we began looking at solutions that could be used across campus.</p>
+<p>This is an opportunity for students to learn and develop demonstrable skills that will serve them in the workplace after graduation. Each semester we have a few paid hourly positions available for students, undergraduate or graduate. In addition to being included on Technology Innovation Working Group projects, these positions also will support the operations of the College of Visual Arts and Design Service Desk. For more information on the positions, and to see if one is currently open, you can check our <a href="information-hiring.html" alt="Student Positions">Student Positions</a> page.</p>
+<p>Faculty and staff, outside of CVAD ITS, that attend the meetings will be asked to offer feedback and generally serve in a <em>consultation</em> role.</p>
+</div>
+</section>
+
+<section id="blurb">
+<div class="section">
+<div class="greencard graybg" style="width: 100%; text-align: left; text-align: justify; text-justify: inter-word; word-wrap: break-word;">
+<p>During the COVID pandemic we began working with <a href="https://guacamole.apache.org/" alt="Appache Guacamole">Guacamole</a> to create a viable remote access solution for on premise classroom and lab computers.  That solution was further developed and is now part of the <a href="https://mylab.unt.edu">UNT-Mylab</a> service, an online computer lab available to all instructors and students.  Guacamole serves to provide remote access to primarily non-Windows devices that are on campus (Citrix, maintained by <a href="https://cob.unt.edu/bits" alt="cob-its">G. Brint Ryan College of Business IT Services</a>) provides access to Windows applications. In addition to providing remote access to the Mac Computer Lab that is part of MyLab, which is mantained by CVAD, it is also provides remote access to specialized classrooms used in the colleges and is available to researchers or others who need this type of solution (talk to your local IT Manager).  Our Guacamole service provides secure access to computers on campus (LDAP-integrated; and Multi-Factor Authentication enabled). Local administrators control their end points: Guacamole just provides the connection between end points and your authorized users. Administrators do not need to login to a Guacamole server to manage the users and end points. Our implementation uses Active Directory groups to manage computer and user pools. When you need to add a computer or user just drop the AD object into the appropriate security group that you have created in your OU.  The security groups are synced every 15 minutes.  A VPN connection is <em>not</em> required.</p>  
+</div>
+</section>
+
+<section id="introduction">
+<div class="section">
+<p>We focus on open-source solutions. The <a href="https://projects.raspberrypi.org/en#hardware" alt="Rspbery Pi Project Search">Raspberry Pi</a> has played a major role in many of our projects: unified audio-visual controls (manage all of your IR devices in a space from your computer), digital signage, and beacons.  The Raspberry Pi website has a <a href="https://projects.raspberrypi.org/en" alt="rPi projects">project section</a> you may want to check out but there are <a href="https://www.google.com/search?q=raspberry%20pi%20projects" alt="Google Search for Raspberry Pi Projects:">others</a>. If you are unfamiliar with Raspberry Pi, start <a href="https://www.raspberrypi.com/news/but-were-absolute-beginners-how-to-set-up-your-raspberry-pi/" alt="Beginners Tutorial for Raspbery Pi">here</a></p>
+<p>Projects are not exclusively Raspberry Pi, however, as you will see from the current list of projects under development or consideration.</p>
+<p>The purpose of the group is to explore new technologies and solutions for use on campus, primarily in the academic units. We meet once a week, in-person and on Microsoft Teams, beginning after the 12th class day each semester. If you are interested in joining us, please contact <a href="mailto:michael.baggett@unt.edu?subject=WEBFORM: Technology Innovation Group" alt="Email Technology Innovation Group">us</a>.</p>
+<p>The meeting schedule for the semester is set at the first meeting following the 12th class day.</p>
+</div>
+</section>
+
+<section id="projects">
+<div class="section">
+<h2>Current Projects</h2>
+<ul><b>Universal Digital Signage and Kiosks</b>: This project is a continuation of the work performed in the previous spring semester. Key goals of the project:
+<li class="li-marg">Device independant: can be used on any device capable of running a web-browser.</li>
+<li class="li-marg">Content is delivered from a central web server and not stored on the device. This is to allow the content to be updated without a need to touch the device.</li>
+<li class="li-marg">Screensavers for each OS will be created so that any computer can be effectively become a digital display.</li>
+<li class="li-marg">Interface for content managers to add and delete images, modify playlists, change templates, and assign playlists to their devices.</li>
+</ul>
+<ul><b>Linux and IoT Endpoint Management</b>: Ansible is the solution we have chosen to move forward with.  Ansible is an open-source suite of software tools that enables infrastructure as code: includes software provisioning, configuration management, and application deployment functionality. Description of the project:
+<li class="li-marg">Create a solution to manage Raspberry Pi and other Linux devices: deploy a secure, standardized build to devices (OS and Apps), monitor the status of the device, apply updates and new software on a scheduled basis, and provide a means to confirm a device is properly secured and functioning as intended.</li>  
+</ul>
+<ul><b>AI</b>: This project is under discussion: more information will be posted here and will be on the agenda for our first meeting of the Fall semster.
+<li class="li-marg">We need to continue to discuss it with a faculty member that is teaching AI technology in their course and is using it as part of their research.</li>
+<li class="li-marg">This project is a little different from the ones we have worked on in the past in that it will be focused on providing solutions that directly support curriculum and research. </li>
+</ul>
+<ul><b>Drone Management</b>: This is a new project for the group.  The identified use case for the solution: recording outdoor performances and events where multiple drones may be needed with specific routes and timing required.  There are other use cases we could explore for the campus.
+<li class="li-marg"><a href="https://px4.io/" alt="PX4">PX4</a> is part of <a href="https://www.dronecode.org/" alt="Dronecode">Dronecode</a>, a non-profit organization administered by Linux Foundation to foster the use of open source software on flying vehicles. Dronecode also hosts QGroundControl, MAVLink & the SDK.</li>
+<li class="li-marg"><a href="https://ardupilot.org/ArduPilot" alt="ArduPilot">ArduPilot</a> is an open source autopilot system supporting multi-copters, traditional helicopters, fixed wing aircraft, rovers, submarines and antenna trackers. The source code is developed by a group of volunteer and professional (i.e. paid) developers.</li>
+</ul>
+<p>
+Anyone can bring their ideas and projects to the group can bring their projects to the group for feedback, assistance and consultation. Keep in mind that outside of the scheduled meeting time, full-time staff may not be available to assist you on your project. The bulk of the work is expected to be performed by the project owner. If the project is considered one that could benefit the academic units, CVAD ITS may be able to contribute further.</p>
+</p>
+</div>
+</section>
+</div> <!--END PAGE -->

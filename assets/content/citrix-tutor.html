@@ -1,0 +1,239 @@
+<!-- Page Content -->
+<script>
+  $("head").append("<title>College of Visual Arts and Design | MyLab@UNT: Citrix Workspace</title>");
+  $("head").append("<link rel='icon' type='image/x-icon' href='/assets/images/_archive_logos/logo-citrixworkspace-round-transparent.png'>"); 
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/assets/scripts/head-elements.js"></script>
+<script>  // Uses jquery-3.3.1.js
+$(document).ready(function(){
+   $('#soft-list').load("/assets/content/software-list-citrix.html");
+});
+</script>
+<div class="page-fix">
+<main id="main-content">
+<div class="main">
+<h1 id="main-content">Tutorial: Using Citrix for Remote Access</h1>
+</div>
+</main>
+<section id="introduction">
+<div class="section">
+<p>Remote connections to Windows computers, or streamed applications, on the UNT campus are
+      provided by <b class="semi-bold">Citrix Workspace</b>. <b class="semi-bold">Citrix Workspace</b> is a universal
+      software client that provides secure, high-performance delivery of virtual desktops and applications. Clients are
+      available for all major operating systems and accessible using any modern web browser that supports HTML5.</p>
+<div class="greencard green-standard" style="width: 100%; background: var(--theme-3)!important; margin: 1.5rem 0 1rem 0;"> 
+<p>The <b>Citrix Workspace</b> app for the MacOS does not work reliably at this time. We have removed it from the lab and classroom computers. A tutorial for accessing Citrix from a web browser on a Mac can be found <a href="/citrix/mac-how-to/" alt="howto-citrix-mac">here</a>.</p>
+</div>
+</div>
+</section>
+
+<section id="service-info">
+<div class="section">
+<div class="section-text-box-container">
+<div class="section-text-box green-standard">
+<h2 style="margin-top: 0;">Quick Start Instructions</h2>
+<p>To go directly to the <b class="semi-bold">Citrix</b> login portal you can use the link provided below:</p>
+<div class="section-2col">
+        <div><a class="invisible" id="citrixportal" href="http://myuntlab.cloud.com" alt="citrix portal"><img
+              style="padding-top: 6px" class="section-links-pic2"
+              src="/assets/images/_archive_logos/logo-citrixworkspace-round-transparent.png"
+              alt="Citrix Workspace"></a>
+        </div>
+        <div style="padding-top: 13px;"><a style="font-size: 20px" id="citrixportal"
+            class="useful-link-button section-button-norm" href="http://myuntlab.cloud.com"
+            alt="Citrix Workspace">Citrix Workspace</a></div>
+          </div>
+
+          <p>If you are a first-time user, use the link below to skip to our <b>Getting Started Guide</b>, which will walk you through the steps to connect to and begin using <b>Citrix Workspace</b></p>
+        <div class="section-ticket-container">
+        <div class="section-ticket-4col">
+        <div>
+        <p class="section-ticket-link" style="width: 100%"><a aria-label="button" role="main" class="ticket-button" id="Citrix FAQ" href="#citrix-getstarted" alt="Citrix FAQ">BEGIN <b style="color: white;">|</b> Getting Started</a></p>
+    </div>
+  </div>
+</div>
+          <p>To see answers to the most commonly asked questions, use the button below to skip to the
+            <b class="semi-bold">Frequently Asked Questions</b>.</p>
+          <div class="section-ticket-container">
+            <div class="section-ticket-4col">
+              <div>
+            <p class="section-ticket-link" style="width: 100%"><a aria-label="button" role="main" class="ticket-button" id="Citrix FAQ"
+                    href="#citrix-faq" alt="Citrix FAQ">FAQ <b style="color: white;">|</b> Frequently Asked Questions</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        
+          <p>For a list of the software applications available on <b>Citrix Workspace</b>, use the link below.</p>
+          <div class="section-ticket-container">
+            <div class="section-ticket-4col">
+              <div>
+            <p class="section-ticket-link" style="width: 100%"><a aria-label="button" role="main" class="ticket-button" id="Citrix FAQ"
+                    href="#citrix-software" alt="Citrix FAQ">CITRIX <b style="color: white;">|</b> Available Software</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+ </section>
+</div>
+<div class="section">
+<div class="section-text-box-container">
+<div class="section-text-box green-standard">
+  <h2 style="margin-top: 0;">Having Trouble?</h2>
+  <p>If you encounter an issue while using <b class="semi-bold">Citrix Workspace</b>, you may submit a ticket using the button below.</p>
+<div class="section-ticket-container">
+  <div class="section-ticket-4col">
+     <div>
+     <p class="section-ticket-link" style="width: 100%"><a aria-label="button" role="main" class="ticket-button" id="submitticket" href="https://unts.service-now.com/saml_redirector.do?sysparm_uri=/untsportal.do?id=sc_cat_item%26sys_id%3D8e638ab31bb245106253ea45604bcbde" alt="Submit a Ticket">Citrix <b style="color: white;">|</b> Submit a Ticket</a></p>
+     </div>
+  </div>
+  </div>
+  <p>In order to access <b class="semi-bold">Citrix Workspace</b>, you will login to with
+    your <b class="semi-bold">UNT Enterprise User ID (EUID)</b> and <em>will be prompted to confirm through
+      multi-factor authentication (MFA)</em> using the <b class="semi-bold">DUO application</b>. For assistance,
+    please use the links below:</p>
+  <div class="section-2col">
+    <div><a class="invisible" id="ams" href="https://ams.untsystem.edu" alt="ams"><img style="padding-top: 8px; filter: invert(100%);"
+          class="section-links-pic2"
+          src="/assets/images/_archive_uxwing/identity-verification-icon.svg" alt="ams"></a>
+    </div>
+    <div style="padding-top: 8px;"><a id="ams" style="font-size: 20px;"
+        class="useful-link-button section-button-norm" href="https://ams.untsystem.edu" alt="ams">Account
+        Management </a></div>
+  </div>
+  <div class="section-2col">
+    <div><a class="invisible" id="mfa"
+        href="https://itss.untsystem.edu/divisions/mrs/is/multi-factor-authentication.php" alt="mfa"><img class="section-links-pic2"
+          src="/assets/images/_archive_logos/duo_round_log.png" alt="mfa"></a></div>
+    <div style="padding-top: 8px;"><a id="mfa" style="font-size: 20px;"
+        class="useful-link-button section-button-norm"
+        href="https://itss.untsystem.edu/divisions/mrs/is/multi-factor-authentication.php" alt="mfa">MFA (DUO)</a>
+    </div>
+  </div>
+<p style="margin-top: 1.5rem!important;"><b>Please contact the <a href="https://it.unt.edu/helpdesk" alt="UNT IT Helpdesk"
+        id="uithelp">UNT IT Help Desk</a> if you have any questions, feedback, or encounter any issues with the service.</b></p>
+</div>
+<div class="pad"></div>
+            </div> <!-- End Section Container -->
+        <div class="halfpad"></div>
+      </div>
+    </div> <!-- End Section Container -->
+  </div> <!-- End Section Container -->
+  <div class="halfpad"></div>
+  <div class="section">
+    <div class="anchor_tag" id="citrix-getstarted"></div>
+    <h2>Getting Started</h2>
+    <p>Below you will find instructions to help get you started on <b>Citrix
+        Workspace</b>.</p>
+      <button id ="software-apps" class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i>
+    <p class="faq-heading">Available software applications</p>
+      </button>
+      <div class="content">
+      <div class="content-box" style="padding-top:0!important; padding-bottom:0!important">
+      <div id="soft-list"></div>
+      </div>
+      </div>
+        <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i>
+    <p class="faq-heading">Set up Multi-Factor Authentication</p>
+        </button>
+        <div class="content">
+      <p class="content-box">Visit <a id="itssmfa"
+              href="https://itss.untsystem.edu/divisions/mrs/is/multi-factor-authentication.php"
+              alt="itssmfa">Multi-Factor Authentication (DUO)</a> for help on how to get started.</p>
+  
+        </div>
+
+        <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i>
+    <p class="faq-heading">Login using a web browser</p>
+        </button>
+        <div class="content">
+      <p class="content-box">To quickly access the Windows desktop and applications from MyLab using your web
+            browser, simply visit <a id="mylab-citrix" href="http://myuntlab.cloud.com">http://myuntlab.cloud.com</a>
+            and log in with your UNT email address and password. Select <b class="semi-bold">Use web browser</b> when
+            you reach the UNT Citrix Workspace welcome page.</p>
+  
+        </div>
+
+        <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i>
+    <p class="faq-heading">Login using the Citrix Workspace desktop client</p>
+        </button>
+        <div class="content">
+      <p class="content-box">To use the full set of features bundled with Citrix Workspace, you will want to use the
+            desktop client. Simply visit <a id="mylab-citrix"
+              href="http://myuntlab.cloud.com">http://myuntlab.cloud.com</a> and log in with your UNT email address and
+            password. Select <b class="semi-bold">Detect Workspace</b> when you reach the UNT Citrix Workspace welcome
+            page. The website will attempt to detect an existing Citrix Workspace installation and launch the
+            application. If not yet installed, please review the license agreement, check the <b class="semi-bold">I
+              agree</b> box and select <b class="semi-bold">Download</b> to install the Citrix Workspace desktop client.
+          </p>
+  
+        </div>
+
+        <button class="material-symbols-outlined collapsible fixed-font"><i class="fa-solid fa-circle-chevron-right gsfont" style="width: 2rem; height: 2rem;"></i>
+    <p class="faq-heading">Accessing your files</p>
+        </button>
+        <div class="content">
+          <div class="content-box">
+            <style>
+                .citrix-pics {
+                    width: 30%;
+                }
+                @media screen and (max-width: 768px) {
+                    .citrix-pics {
+                        width: 100%;
+                    }
+                }
+            
+            </style>
+            <h3><b class="semi-bold">Web browser: you may upload files
+                    from, and download files to, your local computer in two ways:</b></h3>
+        <p><b class="semi-bold">1</b>: &nbsp;Use the Citrix menu at
+                the top-center of your session to select the Upload and Download buttons</p>
+            <div class="pad"></div>
+            <div style="object-fit: contain;">
+                <img 
+                    style="max-width: 100%"
+                    src="/assets/images/_help_tutorials/mylab_webclient_fileaccess.png"
+                    alt="filesacces1">
+            </div>
+            <div class="pad"></div>
+            <div class="pad"></div>
+        <p><b class="semi-bold">2</b>: &nbsp;Drag-and-drop files
+                from your local computer onto your web browser-based application/desktop to
+                trigger the <b class="semi-bold">Upload to</b> prompt where you may select
+                where you want the file(s) uploaded and utilitize the <b
+                    class="semi-bold">Save To My Device</b> option when saving files which
+                will trigger your local browser to download the file.</p>
+            <div class="pad"></div>
+            <img 
+                class="citrix-pics"
+                src="/assets/images/_help_tutorials/mylab_webclient_draganddrop.png"
+                alt="fileaccess2">
+            <br>
+            <br>
+            <img  
+                class="citrix-pics" 
+                src="/assets/images/_help_tutorials/mylab_webclient_savetomydevice.png"
+                alt="fileaccess3">
+            <div class="pad"></div>
+            <div class="pad"></div>
+        <p><b class="semi-bold">3</b>: &nbsp;Additionally, if using
+                the <b class="semi-bold">UNT Desktop</b> you will find shortcuts on the
+                desktop to your UNT OneDrive cloud storage as well as browsers you may use
+                to access your personal, 3rd party storage solution. <b
+                    class="semi-bold">Citrix desktop client</b>: using the Citrix desktop
+                client simplifies file access by making your local computer's storage
+                devices and network shares accessible within the operating system's and the
+                applications' native File Explorers.</p>
+            <div class="pad"></div>
+            <img  
+                class="citrix-pics"
+                src="/assets/images/_help_tutorials/mylab_desktopclient_fileaccess.png"
+                alt="fileaccess4">
+        </div>
+        </div>
+        </div>
+        </section>

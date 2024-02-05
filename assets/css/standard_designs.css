@@ -1,0 +1,209 @@
+    .new-hero-text {
+   padding: 1rem;
+    }
+    
+    .alt-page-container {
+       padding: 5px 130px 15px 150px;
+       margin: 0;
+    }
+ 
+    a.side:link {
+       color: white;
+       background-color: transparent;
+       text-decoration: underline;
+       -webkit-text-decoration-color: transparent;
+       text-decoration-color: transparent;
+       border-radius: 5px;
+    }
+ 
+    a.side:visited {
+       color: white;
+       background-color: transparent;
+       text-decoration: underline;
+       -webkit-text-decoration-color: transparent;
+       text-decoration-color: transparent;
+       border-radius: 5px;
+    }
+ 
+    a.side:hover {
+       color: #00853E;
+       background-color: transparent;
+       text-decoration: underline;
+       -webkit-text-decoration-color: transparent;
+       text-decoration-color: transparent;
+       border-radius: 5px;
+    }
+ 
+    a.side:active {
+       color: red;
+       background-color: orange;
+       text-decoration: underline;
+       -webkit-text-decoration-color: transparent;
+       text-decoration-color: transparent;
+       border-radius: 5px;
+    }
+
+.cool-button-link {
+       background: var(--theme-7)!important;
+       color: black;
+       margin: 0;
+       width: fit-content;
+}
+
+.cool-button-link:hover {
+   background: var(--green-standard)!important;
+   color: black;
+   margin: 0;
+   width: fit-content;
+}
+
+.cool-button-link:active {
+   background: var(--theme-3)!important;
+   color: var(--theme-3);
+   margin: 0;
+   width: fit-content;
+}
+
+.cool-button {
+       width: 40%;
+}
+    .cool-alert {
+       display: grid;
+       gap: 10px 20px;
+       grid-template-columns: 60px auto;
+       text-align: center;
+       height: auto;
+       margin: auto;
+       padding: 0 20px;
+    }
+ 
+    .cool-alert-text-container {
+       margin: 0;
+       width: 100%;
+       text-align: left;
+       padding: 20px 0px 10px 0px;
+    }
+ 
+    .cool-alert-container {
+      width: 84%;
+    }
+ 
+    .cool-space {
+     padding: 0px 0px;
+    }
+
+       .alt-hero-text-container {
+        width: 62%;
+   }
+   
+   .newalert-hero-text-container {
+        width: 50%;
+        margin: auto;
+     }
+
+
+     @media screen and (max-width: 1400px) {
+      .cool-grid {
+         width: 100%;
+      }
+
+
+       .alt-hero-text-container {
+        width: 63%;
+       }
+
+    }
+
+    @media screen and (max-width: 1200px) {
+      .cool-grid {
+         /* flex-direction: column;
+         align-items: center; */
+         flex-wrap: wrap;
+         gap: 1rem;
+         padding: 1.5rem 0;
+      }
+
+      .cool-box {
+         flex: 0 0 50%;
+      }
+
+       .alt-hero-text-container {
+        width: 63%;
+       }
+
+
+    }
+
+    @media screen and (max-width: 900px) {
+      .cool-box {
+         flex: 0 0 60%;
+      }
+       .alt-hero-text-container {
+        width: 100%;
+       }
+       .cool-alert-container {
+          width: 100%;
+          margin: 0;
+       }
+       .new-hero-text-container {
+         margin: 0;
+         width: 100%;
+        }
+ 
+        .newalert-hero-text-container {
+         width: 100%;
+         margin: auto;
+      }
+
+    }
+
+    @media screen and (max-width: 600px) {
+ 
+       .alt-page-container {
+          padding: 30px 20px 30px 20px;
+       }
+ 
+       .cool-grid {
+          /* flex-direction: column;
+          align-items: center; */
+          flex-wrap: wrap;
+          gap: 1rem;
+          padding: 1.5rem 0;
+       }
+ 
+       .cool-box {
+          flex: 0 0 70%;
+       }
+ 
+       .cool-alert {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0 10px;
+       }
+      
+       .cool-alert-text-container {
+         padding: 0px 0px 10px 0px;
+    }
+
+       .cool-alert-format {
+          font-size: 1.1rem;
+          margin: auto 0;
+          text-align: center;
+       }
+
+       .new-hero-text {
+          font-size: 1.1rem;
+       }
+
+   
+       .alt-hero-text-container {
+        margin: 0;
+        width: 100%;
+       }
+
+    .cool-space {
+     padding: 20px 0px;
+       }
+
+    }
